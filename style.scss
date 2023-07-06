@@ -1,0 +1,118 @@
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./statosskyeng-v1.001/stratosskyengweb-regular.woff);
+    src: url(./statosskyeng-v1.001/stratosskyengweb-regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 73, 128, 1);
+    font-family: StratosSkyeng;
+}
+
+
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding-top: 158px;
+
+    &-text {
+        width: 208px;
+        height: 96px;
+        color: #004980;
+        font-family: StratosSkyeng;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    &-games {
+        background-color: #C2F5FF;
+        width: 480px;
+        height: 459px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+}
+
+.box-games-selection strong {
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+.box-level-selection-games {
+    display: flex;
+    gap: 26px;
+
+}
+
+
+.box-games-selection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box-level-selection-games input[type="radio"] {
+    display: none;
+}
+
+.box-level-selection-games label {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-family: StratosSkyeng;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92px;
+    color: #0080C1;
+   
+}
+
+.box-level-selection-games input[type="radio"]:checked+label {
+    background-color: #0080C1;
+    color: #FFFFFF;
+   
+}
+
+.box-level-selection-games label:hover {
+    background-color: #0080C1;
+    color: #FFFFFF;
+}
+
+.start-button {
+
+    background-color: #7AC100;
+    color: #FFFFFF;
+    border-radius: 12px;
+    border: none;
+    width: 246px;
+    height: 50px;
+    font-family: StratosSkyeng;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+}
