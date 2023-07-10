@@ -22,4 +22,5 @@ export function renderGame(level) {
             </div>
     `
     appEl.innerHTML = appHtml;
+    
 }
