@@ -11,7 +11,7 @@ export function renderGame(level) {
             messageLevel = 'средний'
             break;
         case '3':
-            messageLevel = 'тяжелый'
+            messageLevel = 'сложный'
             break;
         default:
             break;

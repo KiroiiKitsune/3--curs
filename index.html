@@ -12,9 +12,11 @@
             
                 <h3 class="box-text">Выбор сложности</h3>
                 
-                <div class="box-games-selection"></div>
+                <div class="box-games-selection">
+
                     <div class="box-level-selection-games">
-                        <input data-index='1' class="box-level" type="radio" value="1" id="game-1" name="games" checked>
+
+                        <input data-index='1' class="box-level" type="radio" value="1" id="game-1" name="games">
                         <label for="game-1">1</label>
                         
                         <input data-index='2' class="box-level" type="radio" name="games" value="2" id="game-2">
@@ -22,13 +24,16 @@
                         
                         <input data-index='3' class="box-level" type="radio" name="games" value="3" id="game-3">
                         <label for="game-3">3</label>
+
                     </div> 
-                       <button class="start-button">Старт</button>
+                </div>
+                    <!-- <form class="start-button" action="submit">Старт</form> -->
+                       <button class="start-button" disabled>Старт</button>
                 </div>
         
             
         </div>
-    </div>
+    
 </body>
 <script type="module" src="./script/script.js"></script>
 </html>

@@ -18,7 +18,21 @@ for (const levelSelectEl of levelSelectEls) {
     })
 }
 
+
+
+
+
 const buttonStartGame = document.querySelector('.start-button');
+function  buttonDisabled(expectedValue) {
+    if (expectedValue === '') {
+        buttonStartGame.disabled = true;
+    } else {
+        buttonStartGame.disabled = false; 
+    }
+    
+}
 buttonStartGame.addEventListener('click', () => {
+    
     renderGame(globalState.diffLevel);
 })
+buttonDisabled()
