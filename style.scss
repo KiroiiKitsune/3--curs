@@ -1,7 +1,7 @@
 @font-face {
     font-family: StratosSkyeng;
-    src: url(./statosskyeng-v1.001/stratosskyengweb-regular.woff);
-    src: url(./statosskyeng-v1.001/stratosskyengweb-regular.woff2);
+    src: url(./fonts/stratosskyengweb-regular.woff);
+    src: url(./fonts/stratosskyengweb-regular.woff2);
 }
 
 * {
@@ -25,7 +25,6 @@ body {
 
     &-text {
         width: 208px;
-        height: 96px;
         color: #004980;
         font-family: StratosSkyeng;
         font-weight: 400;
@@ -114,5 +113,5 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-
+    cursor: pointer;
 }
