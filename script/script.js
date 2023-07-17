@@ -11,8 +11,8 @@ for (const levelSelectEl of levelSelectEls) {
             levelSelectEl.classList.remove('box-level__select');
         }
         levelSelectEl.classList.add('box-level__select');
-        globalState.diffLevel = levelSelectEl.dataset.index;
-        console.log(globalState.diffLevel);
+        window.globalState.diffLevel = levelSelectEl.dataset.index;
+        console.log(window.globalState.diffLevel);
     });
 }
 
@@ -25,6 +25,6 @@ function buttonDisabled(expectedValue) {
     }
 }
 buttonStartGame.addEventListener('click', () => {
-    renderGame(globalState.diffLevel);
+    renderGame(window.globalState.diffLevel);
 });
 buttonDisabled();
