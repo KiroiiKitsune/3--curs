@@ -1,17 +1,15 @@
-
-
 export function renderGame(level) {
     const appEl = document.getElementById('app');
-    let  messageLevel 
+    let messageLevel;
     switch (level) {
         case '1':
-            messageLevel = 'легкий'
+            messageLevel = 'легкий';
             break;
         case '2':
-            messageLevel = 'средний'
+            messageLevel = 'средний';
             break;
         case '3':
-            messageLevel = 'сложный'
+            messageLevel = 'сложный';
             break;
         default:
             break;
@@ -20,7 +18,6 @@ export function renderGame(level) {
     <div class="box-games">
                 <h3 class="box-text">Вы выбрали ${messageLevel} уровень сложности</h3>
             </div>
-    `
+    `;
     appEl.innerHTML = appHtml;
-    
 }
