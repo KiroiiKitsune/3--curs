@@ -105,13 +105,13 @@ function shuffle(array) {
 function getNumCards(difficulty) {
     switch (difficulty) {
         case 'easy':
-            return 6;
+            return 3;
         case 'medium':
-            return 12;
-        case 'hard':
-            return 18;
-        default:
             return 6;
+        case 'hard':
+            return 9;
+        default:
+            return 3;
     }
 }
 

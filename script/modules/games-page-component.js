@@ -62,13 +62,13 @@ export const renderMainComponent = () => {
     function levelNumCards() {
         switch (levelData.difficulty) {
             case 'easy':
-                levelData.numCards = 6;
+                levelData.numCards = 3;
                 break;
             case 'medium':
-                levelData.numCards = 12;
+                levelData.numCards = 6;
                 break;
             case 'hard':
-                levelData.numCards = 18;
+                levelData.numCards = 9;
                 break;
         }
     }

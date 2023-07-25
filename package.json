@@ -8,7 +8,10 @@
         "format": "prettier --write .",
         "lint:js": "eslint ./**/*.js",
         "lint:css": "stylelint ./**/*.css",
-        "lint": "npm run lint:js && npm run lint:css"
+        "lint": "npm run lint:js && npm run lint:css",
+        "build": "set NODE_ENV=production && webpack",
+        "start": "webpack-dev-server --open --mode development",
+        "start_prod": "webpack-dev-server --open --mode production"
     },
     "keywords": [],
     "author": "",
@@ -16,16 +19,19 @@
     "devDependencies": {
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.8.1",
+        "css-minimizer-webpack-plugin": "^5.0.1",
         "eslint": "^8.45.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^5.0.0",
         "html-webpack-plugin": "^5.5.3",
+        "mini-css-extract-plugin": "^2.7.6",
         "prettier": "^3.0.0",
         "style-loader": "^3.3.3",
         "stylelint": "^15.10.1",
         "stylelint-config-standard": "^34.0.0",
         "stylelint-prettier": "^4.0.0",
         "webpack": "^5.88.2",
-        "webpack-cli": "^5.1.4"
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
     }
 }
