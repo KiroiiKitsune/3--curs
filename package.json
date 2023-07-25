@@ -10,8 +10,8 @@
         "lint:css": "stylelint ./**/*.css",
         "lint": "npm run lint:js && npm run lint:css",
         "build": "set NODE_ENV=production && webpack",
-        "start": "webpack-dev-server --open --mode development",
-        "start_prod": "webpack-dev-server --open --mode production"
+        "start": "webpack-dev-server --open "
+        
     },
     "keywords": [],
     "author": "",

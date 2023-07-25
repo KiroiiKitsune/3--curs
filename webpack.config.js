@@ -10,6 +10,10 @@ const mode =
 module.exports = {
     entry: '/script/script.js',
     mode,
+    devtool:
+        process.env.NODE_ENV === 'production'
+            ? 'hidden-source-map'
+            : 'source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
