@@ -1,6 +1,8 @@
 import {expect, test} from '@jest/globals';
 import { cardSymbols, cardValues, createCards } from './src/screen-card';
 
+
+
 test('Проверка формирования карт в колоде', () => {
   const cardSymbols = ['spades', 'hearts', 'diamonds', 'clubs'];
   const cardValues = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6'];
@@ -18,6 +20,8 @@ test('Проверка формирования карт в колоде', () =>
       cardDeck.push(card);
     }
   }
+
+
 
   // Проверка, что в колоде находятся все карты
 
