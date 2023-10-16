@@ -244,6 +244,10 @@ function gameOver() {
     screenFirstElement.style.display = 'flex';
     let screenStart;
 
+
+
+    
+
         screenStart =   `<form class="form-block">
                             ${result ? '<img src="static/win.png" title="Выигрыш" alt="Выигрыш"></img>' : '<img src="static/dead.png" title="Выигрыш" alt="Выигрыш"></img>'}
                             <div class="final-text">${result ? '<p>Вы выиграли!</p>' : '<p>Вы проиграли!</p>'}</div>
