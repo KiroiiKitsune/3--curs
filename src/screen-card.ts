@@ -246,7 +246,7 @@ function gameOver() {
 
 
 
-    
+
 
         screenStart =   `<form class="form-block">
                             ${result ? '<img src="static/win.png" title="Выигрыш" alt="Выигрыш"></img>' : '<img src="static/dead.png" title="Выигрыш" alt="Выигрыш"></img>'}
@@ -257,5 +257,8 @@ function gameOver() {
                         </form>`;
         screenFirstElement.innerHTML = screenStart;
     }
+
+
+    
         document.body.classList.add('game-over-background');
 }
